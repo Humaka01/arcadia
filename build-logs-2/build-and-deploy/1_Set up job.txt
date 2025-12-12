@@ -1,0 +1,45 @@
+﻿2025-12-12T16:53:03.6719064Z Current runner version: '2.329.0'
+2025-12-12T16:53:03.6753911Z ##[group]Runner Image Provisioner
+2025-12-12T16:53:03.6755177Z Hosted Compute Agent
+2025-12-12T16:53:03.6756291Z Version: 20251202.455
+2025-12-12T16:53:03.6757632Z Commit: 6c10caca4910e198df60de23adf20ad317c474e3
+2025-12-12T16:53:03.6758864Z Build Date: 2025-12-02T15:56:59Z
+2025-12-12T16:53:03.6759992Z Worker ID: {1d5db26e-4da5-41d8-885b-62f05c8eaeea}
+2025-12-12T16:53:03.6761395Z ##[endgroup]
+2025-12-12T16:53:03.6762295Z ##[group]Operating System
+2025-12-12T16:53:03.6763253Z Ubuntu
+2025-12-12T16:53:03.6764194Z 24.04.3
+2025-12-12T16:53:03.6765021Z LTS
+2025-12-12T16:53:03.6766056Z ##[endgroup]
+2025-12-12T16:53:03.6767057Z ##[group]Runner Image
+2025-12-12T16:53:03.6767966Z Image: ubuntu-24.04
+2025-12-12T16:53:03.6768777Z Version: 20251208.163.1
+2025-12-12T16:53:03.6770844Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251208.163/images/ubuntu/Ubuntu2404-Readme.md
+2025-12-12T16:53:03.6773483Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251208.163
+2025-12-12T16:53:03.6775592Z ##[endgroup]
+2025-12-12T16:53:03.6780340Z ##[group]GITHUB_TOKEN Permissions
+2025-12-12T16:53:03.6783300Z Actions: write
+2025-12-12T16:53:03.6784278Z ArtifactMetadata: write
+2025-12-12T16:53:03.6785192Z Attestations: write
+2025-12-12T16:53:03.6786562Z Checks: write
+2025-12-12T16:53:03.6787469Z Contents: write
+2025-12-12T16:53:03.6788333Z Deployments: write
+2025-12-12T16:53:03.6789521Z Discussions: write
+2025-12-12T16:53:03.6790445Z Issues: write
+2025-12-12T16:53:03.6791240Z Metadata: read
+2025-12-12T16:53:03.6792242Z Models: read
+2025-12-12T16:53:03.6793004Z Packages: write
+2025-12-12T16:53:03.6793836Z Pages: write
+2025-12-12T16:53:03.6794867Z PullRequests: write
+2025-12-12T16:53:03.6796169Z RepositoryProjects: write
+2025-12-12T16:53:03.6797254Z SecurityEvents: write
+2025-12-12T16:53:03.6798381Z Statuses: write
+2025-12-12T16:53:03.6799252Z ##[endgroup]
+2025-12-12T16:53:03.6802242Z Secret source: Actions
+2025-12-12T16:53:03.6803558Z Prepare workflow directory
+2025-12-12T16:53:03.7147697Z Prepare all required actions
+2025-12-12T16:53:03.7187739Z Getting action download info
+2025-12-12T16:53:04.0626673Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2025-12-12T16:53:04.1622877Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-12-12T16:53:04.3884392Z Download action repository 'amondnet/vercel-action@v20' (SHA:2d78157ee070f28ff89dd4da74e0369fc26d3b34)
+2025-12-12T16:53:04.9303942Z Complete job name: build-and-deploy
