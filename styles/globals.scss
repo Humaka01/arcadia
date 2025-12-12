@@ -48,27 +48,10 @@ header.site-header {
 }
 
 /* card title / body color overrides */
-.card h3 {
-    margin: 0 0 0.25rem;
-    font-size: 1.125rem;
-    color: var(--fg-hex);
-    font-weight: 700;
-}
+
 .card p {
     margin: 0;
     color: rgba(248, 250, 252, 0.85);
-}
-
-/* remove translucent thumbnail boxes */
-.card .thumbnail {
-    background: transparent;
-    border: none;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-    width: 56px;
-    height: 56px;
-    display: flex;
 }
 
 .btn-glitch-fill .text,
@@ -258,6 +241,8 @@ footer.site-footer {
 .card h3 {
     margin: 0 0 0.25rem;
     font-size: 1.125rem;
+    font-weight: 700;
+    margin-right: 12px;
     color: var(--card-fg-dark);
 }
 .card p {

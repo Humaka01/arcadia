@@ -6,7 +6,7 @@ import NavGamesButton from '../components/NavGamesButton'
 
 // Metadata is used by Next.js App Router for default head tags
 export const metadata = {
-  title: 'Arcadia — Fun & Quick Browser Games',
+  title: 'Arcadia - Fun & Quick Browser Games',
   description: 'Arcadia — a collection of quick and polished browser games',
 }
 
