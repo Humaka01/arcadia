@@ -11,7 +11,7 @@ export default function LightPillar({
   pillarWidth = 3.0,
   pillarHeight = 0.4,
   noiseIntensity = 0.5,
-  pillarRotation = 0,
+  pillarRotation = 135,
   interactive = false,
   mixBlendMode = 'screen',
   className = ''
