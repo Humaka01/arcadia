@@ -1,0 +1,5 @@
+2025-12-12T16:50:19.1140000Z Requested labels: ubuntu-latest
+2025-12-12T16:50:19.1140000Z Job defined at: Humaka01/arcadia/.github/workflows/vercel-deploy.yml@refs/heads/main
+2025-12-12T16:50:19.1140000Z Waiting for a runner to pick up this job...
+2025-12-12T16:50:19.6070000Z Job is about to start running on the hosted runner: GitHub Actions 1000000000
+2025-12-12T16:50:19.6070000Z Job is waiting for a hosted runner to come online.

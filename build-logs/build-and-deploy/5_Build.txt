@@ -1,0 +1,10 @@
+﻿2025-12-12T16:50:40.8361660Z ##[group]Run npm run build
+2025-12-12T16:50:40.8361926Z [36;1mnpm run build[0m
+2025-12-12T16:50:40.8393943Z shell: /usr/bin/bash -e {0}
+2025-12-12T16:50:40.8394184Z ##[endgroup]
+2025-12-12T16:50:40.9631329Z 
+2025-12-12T16:50:40.9631893Z > nextjs-tailwind-sass-tutor@0.1.0 build
+2025-12-12T16:50:40.9632233Z > next build
+2025-12-12T16:50:40.9632354Z 
+2025-12-12T16:50:41.0683940Z You are using Node.js 18.20.8. For Next.js, Node.js version ">=20.9.0" is required.
+2025-12-12T16:50:41.0807712Z ##[error]Process completed with exit code 1.

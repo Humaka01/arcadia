@@ -1,0 +1,192 @@
+﻿2025-12-12T16:50:23.7108693Z Current runner version: '2.329.0'
+2025-12-12T16:50:23.7140439Z ##[group]Runner Image Provisioner
+2025-12-12T16:50:23.7141715Z Hosted Compute Agent
+2025-12-12T16:50:23.7142721Z Version: 20251202.455
+2025-12-12T16:50:23.7143628Z Commit: 6c10caca4910e198df60de23adf20ad317c474e3
+2025-12-12T16:50:23.7144712Z Build Date: 2025-12-02T15:56:59Z
+2025-12-12T16:50:23.7145870Z Worker ID: {2da9805e-4504-41b7-bfe3-d9b97cc95fd1}
+2025-12-12T16:50:23.7147135Z ##[endgroup]
+2025-12-12T16:50:23.7147981Z ##[group]Operating System
+2025-12-12T16:50:23.7148882Z Ubuntu
+2025-12-12T16:50:23.7149593Z 24.04.3
+2025-12-12T16:50:23.7150251Z LTS
+2025-12-12T16:50:23.7150966Z ##[endgroup]
+2025-12-12T16:50:23.7151763Z ##[group]Runner Image
+2025-12-12T16:50:23.7152570Z Image: ubuntu-24.04
+2025-12-12T16:50:23.7153462Z Version: 20251208.163.1
+2025-12-12T16:50:23.7155142Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251208.163/images/ubuntu/Ubuntu2404-Readme.md
+2025-12-12T16:50:23.7157854Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251208.163
+2025-12-12T16:50:23.7159457Z ##[endgroup]
+2025-12-12T16:50:23.7163825Z ##[group]GITHUB_TOKEN Permissions
+2025-12-12T16:50:23.7166497Z Actions: write
+2025-12-12T16:50:23.7167283Z ArtifactMetadata: write
+2025-12-12T16:50:23.7168279Z Attestations: write
+2025-12-12T16:50:23.7169084Z Checks: write
+2025-12-12T16:50:23.7169783Z Contents: write
+2025-12-12T16:50:23.7170618Z Deployments: write
+2025-12-12T16:50:23.7171363Z Discussions: write
+2025-12-12T16:50:23.7172153Z Issues: write
+2025-12-12T16:50:23.7173026Z Metadata: read
+2025-12-12T16:50:23.7173750Z Models: read
+2025-12-12T16:50:23.7174499Z Packages: write
+2025-12-12T16:50:23.7175341Z Pages: write
+2025-12-12T16:50:23.7176252Z PullRequests: write
+2025-12-12T16:50:23.7177256Z RepositoryProjects: write
+2025-12-12T16:50:23.7178306Z SecurityEvents: write
+2025-12-12T16:50:23.7179097Z Statuses: write
+2025-12-12T16:50:23.7179871Z ##[endgroup]
+2025-12-12T16:50:23.7182714Z Secret source: Actions
+2025-12-12T16:50:23.7183737Z Prepare workflow directory
+2025-12-12T16:50:23.7547306Z Prepare all required actions
+2025-12-12T16:50:23.7586935Z Getting action download info
+2025-12-12T16:50:24.1704656Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2025-12-12T16:50:24.2768087Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-12-12T16:50:24.3657156Z Download action repository 'amondnet/vercel-action@v20' (SHA:2d78157ee070f28ff89dd4da74e0369fc26d3b34)
+2025-12-12T16:50:25.2744533Z Complete job name: build-and-deploy
+2025-12-12T16:50:25.3558622Z ##[group]Run actions/checkout@v4
+2025-12-12T16:50:25.3559967Z with:
+2025-12-12T16:50:25.3560839Z   repository: Humaka01/arcadia
+2025-12-12T16:50:25.3562126Z   token: ***
+2025-12-12T16:50:25.3562886Z   ssh-strict: true
+2025-12-12T16:50:25.3563699Z   ssh-user: git
+2025-12-12T16:50:25.3564508Z   persist-credentials: true
+2025-12-12T16:50:25.3565420Z   clean: true
+2025-12-12T16:50:25.3566416Z   sparse-checkout-cone-mode: true
+2025-12-12T16:50:25.3567399Z   fetch-depth: 1
+2025-12-12T16:50:25.3568181Z   fetch-tags: false
+2025-12-12T16:50:25.3568973Z   show-progress: true
+2025-12-12T16:50:25.3569782Z   lfs: false
+2025-12-12T16:50:25.3570542Z   submodules: false
+2025-12-12T16:50:25.3571377Z   set-safe-directory: true
+2025-12-12T16:50:25.3572507Z ##[endgroup]
+2025-12-12T16:50:25.4697847Z Syncing repository: Humaka01/arcadia
+2025-12-12T16:50:25.4701959Z ##[group]Getting Git version info
+2025-12-12T16:50:25.4703917Z Working directory is '/home/runner/work/arcadia/arcadia'
+2025-12-12T16:50:25.4705883Z [command]/usr/bin/git version
+2025-12-12T16:50:25.4776850Z git version 2.52.0
+2025-12-12T16:50:25.4804644Z ##[endgroup]
+2025-12-12T16:50:25.4821527Z Temporarily overriding HOME='/home/runner/work/_temp/2852443f-8a55-4537-8169-b821661b34a0' before making global git config changes
+2025-12-12T16:50:25.4826504Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-12T16:50:25.4835454Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arcadia/arcadia
+2025-12-12T16:50:25.4878933Z Deleting the contents of '/home/runner/work/arcadia/arcadia'
+2025-12-12T16:50:25.4882698Z ##[group]Initializing the repository
+2025-12-12T16:50:25.4887684Z [command]/usr/bin/git init /home/runner/work/arcadia/arcadia
+2025-12-12T16:50:25.5015377Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-12-12T16:50:25.5017551Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2025-12-12T16:50:25.5019453Z hint: to use in all of your new repositories, which will suppress this warning,
+2025-12-12T16:50:25.5020867Z hint: call:
+2025-12-12T16:50:25.5021576Z hint:
+2025-12-12T16:50:25.5022479Z hint: 	git config --global init.defaultBranch <name>
+2025-12-12T16:50:25.5023623Z hint:
+2025-12-12T16:50:25.5024690Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-12-12T16:50:25.5026700Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-12-12T16:50:25.5028132Z hint:
+2025-12-12T16:50:25.5028868Z hint: 	git branch -m <name>
+2025-12-12T16:50:25.5029723Z hint:
+2025-12-12T16:50:25.5030890Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-12-12T16:50:25.5044028Z Initialized empty Git repository in /home/runner/work/arcadia/arcadia/.git/
+2025-12-12T16:50:25.5054695Z [command]/usr/bin/git remote add origin https://github.com/Humaka01/arcadia
+2025-12-12T16:50:25.5089294Z ##[endgroup]
+2025-12-12T16:50:25.5090723Z ##[group]Disabling automatic garbage collection
+2025-12-12T16:50:25.5092526Z [command]/usr/bin/git config --local gc.auto 0
+2025-12-12T16:50:25.5122751Z ##[endgroup]
+2025-12-12T16:50:25.5124126Z ##[group]Setting up auth
+2025-12-12T16:50:25.5128618Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-12T16:50:25.5158594Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-12T16:50:25.5580000Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-12T16:50:25.5610841Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-12T16:50:25.5833563Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-12T16:50:25.5865768Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-12T16:50:25.6106573Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-12-12T16:50:25.6145641Z ##[endgroup]
+2025-12-12T16:50:25.6147222Z ##[group]Fetching the repository
+2025-12-12T16:50:25.6156447Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c66ab87402f4652d3b476dddcd168f36aebebef0:refs/remotes/origin/main
+2025-12-12T16:50:26.0066326Z From https://github.com/Humaka01/arcadia
+2025-12-12T16:50:26.0067996Z  * [new ref]         c66ab87402f4652d3b476dddcd168f36aebebef0 -> origin/main
+2025-12-12T16:50:26.0101184Z ##[endgroup]
+2025-12-12T16:50:26.0103623Z ##[group]Determining the checkout info
+2025-12-12T16:50:26.0106477Z ##[endgroup]
+2025-12-12T16:50:26.0111226Z [command]/usr/bin/git sparse-checkout disable
+2025-12-12T16:50:26.0157569Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-12-12T16:50:26.0188318Z ##[group]Checking out the ref
+2025-12-12T16:50:26.0192137Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-12-12T16:50:26.0278259Z Switched to a new branch 'main'
+2025-12-12T16:50:26.0279935Z branch 'main' set up to track 'origin/main'.
+2025-12-12T16:50:26.0288428Z ##[endgroup]
+2025-12-12T16:50:26.0325291Z [command]/usr/bin/git log -1 --format=%H
+2025-12-12T16:50:26.0348619Z c66ab87402f4652d3b476dddcd168f36aebebef0
+2025-12-12T16:50:26.0639495Z ##[group]Run actions/setup-node@v4
+2025-12-12T16:50:26.0640505Z with:
+2025-12-12T16:50:26.0641204Z   node-version: 18
+2025-12-12T16:50:26.0642047Z   always-auth: false
+2025-12-12T16:50:26.0642834Z   check-latest: false
+2025-12-12T16:50:26.0643989Z   token: ***
+2025-12-12T16:50:26.0644968Z ##[endgroup]
+2025-12-12T16:50:26.2458268Z Attempting to download 18...
+2025-12-12T16:50:27.0552063Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+2025-12-12T16:50:27.6563861Z Extracting ...
+2025-12-12T16:50:27.6674885Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/05aff214-cfbe-4a5d-b757-3d1f807fcf56 -f /home/runner/work/_temp/f65f4334-a6f3-427b-ab00-d8b30bc4f7d6
+2025-12-12T16:50:28.6183898Z Adding to the cache ...
+2025-12-12T16:50:30.2808716Z ##[group]Environment details
+2025-12-12T16:50:30.5159509Z node: v18.20.8
+2025-12-12T16:50:30.5160515Z npm: 10.8.2
+2025-12-12T16:50:30.5160853Z yarn: 1.22.22
+2025-12-12T16:50:30.5161590Z ##[endgroup]
+2025-12-12T16:50:30.5322427Z ##[group]Run npm ci
+2025-12-12T16:50:30.5322718Z [36;1mnpm ci[0m
+2025-12-12T16:50:30.5362421Z shell: /usr/bin/bash -e {0}
+2025-12-12T16:50:30.5362695Z ##[endgroup]
+2025-12-12T16:50:31.0203087Z npm warn EBADENGINE Unsupported engine {
+2025-12-12T16:50:31.0203650Z npm warn EBADENGINE   package: 'hashery@1.3.0',
+2025-12-12T16:50:31.0204101Z npm warn EBADENGINE   required: { node: '>=20' },
+2025-12-12T16:50:31.0204611Z npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+2025-12-12T16:50:31.0205000Z npm warn EBADENGINE }
+2025-12-12T16:50:31.0205660Z npm warn EBADENGINE Unsupported engine {
+2025-12-12T16:50:31.0206499Z npm warn EBADENGINE   package: 'next@16.0.10',
+2025-12-12T16:50:31.0207194Z npm warn EBADENGINE   required: { node: '>=20.9.0' },
+2025-12-12T16:50:31.0207757Z npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+2025-12-12T16:50:31.0208144Z npm warn EBADENGINE }
+2025-12-12T16:50:31.0213836Z npm warn EBADENGINE Unsupported engine {
+2025-12-12T16:50:31.0214495Z npm warn EBADENGINE   package: 'qified@0.5.3',
+2025-12-12T16:50:31.0215090Z npm warn EBADENGINE   required: { node: '>=20' },
+2025-12-12T16:50:31.0215536Z npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+2025-12-12T16:50:31.0215890Z npm warn EBADENGINE }
+2025-12-12T16:50:32.4066908Z npm warn deprecated lodash.pick@4.4.0: This package is deprecated. Use destructuring assignment syntax instead.
+2025-12-12T16:50:32.4069565Z npm warn deprecated lodash.omit@4.5.0: This package is deprecated. Use destructuring assignment syntax instead.
+2025-12-12T16:50:40.7986042Z 
+2025-12-12T16:50:40.7986973Z added 253 packages, and audited 254 packages in 10s
+2025-12-12T16:50:40.7996849Z 
+2025-12-12T16:50:40.7997199Z 62 packages are looking for funding
+2025-12-12T16:50:40.7997728Z   run `npm fund` for details
+2025-12-12T16:50:40.8091226Z 
+2025-12-12T16:50:40.8091659Z 2 high severity vulnerabilities
+2025-12-12T16:50:40.8092013Z 
+2025-12-12T16:50:40.8092444Z To address all issues (including breaking changes), run:
+2025-12-12T16:50:40.8093061Z   npm audit fix --force
+2025-12-12T16:50:40.8093327Z 
+2025-12-12T16:50:40.8093555Z Run `npm audit` for details.
+2025-12-12T16:50:40.8361669Z ##[group]Run npm run build
+2025-12-12T16:50:40.8361929Z [36;1mnpm run build[0m
+2025-12-12T16:50:40.8393949Z shell: /usr/bin/bash -e {0}
+2025-12-12T16:50:40.8394187Z ##[endgroup]
+2025-12-12T16:50:40.9631383Z 
+2025-12-12T16:50:40.9631906Z > nextjs-tailwind-sass-tutor@0.1.0 build
+2025-12-12T16:50:40.9632236Z > next build
+2025-12-12T16:50:40.9632357Z 
+2025-12-12T16:50:41.0683976Z You are using Node.js 18.20.8. For Next.js, Node.js version ">=20.9.0" is required.
+2025-12-12T16:50:41.0807731Z ##[error]Process completed with exit code 1.
+2025-12-12T16:50:41.0905844Z Post job cleanup.
+2025-12-12T16:50:41.1830196Z [command]/usr/bin/git version
+2025-12-12T16:50:41.1865339Z git version 2.52.0
+2025-12-12T16:50:41.1907518Z Temporarily overriding HOME='/home/runner/work/_temp/6387e4a8-bd2a-4475-89c5-fde2c589ee02' before making global git config changes
+2025-12-12T16:50:41.1908488Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-12T16:50:41.1912746Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arcadia/arcadia
+2025-12-12T16:50:41.1947471Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-12T16:50:41.1979024Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-12T16:50:41.2202287Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-12T16:50:41.2222315Z http.https://github.com/.extraheader
+2025-12-12T16:50:41.2234485Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-12-12T16:50:41.2263218Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-12T16:50:41.2476747Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-12T16:50:41.2506787Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-12T16:50:41.2831811Z Cleaning up orphan processes

@@ -1,0 +1,33 @@
+﻿2025-12-12T16:50:30.5322405Z ##[group]Run npm ci
+2025-12-12T16:50:30.5322714Z [36;1mnpm ci[0m
+2025-12-12T16:50:30.5362403Z shell: /usr/bin/bash -e {0}
+2025-12-12T16:50:30.5362690Z ##[endgroup]
+2025-12-12T16:50:31.0203032Z npm warn EBADENGINE Unsupported engine {
+2025-12-12T16:50:31.0203645Z npm warn EBADENGINE   package: 'hashery@1.3.0',
+2025-12-12T16:50:31.0204075Z npm warn EBADENGINE   required: { node: '>=20' },
+2025-12-12T16:50:31.0204607Z npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+2025-12-12T16:50:31.0204993Z npm warn EBADENGINE }
+2025-12-12T16:50:31.0205651Z npm warn EBADENGINE Unsupported engine {
+2025-12-12T16:50:31.0206490Z npm warn EBADENGINE   package: 'next@16.0.10',
+2025-12-12T16:50:31.0207186Z npm warn EBADENGINE   required: { node: '>=20.9.0' },
+2025-12-12T16:50:31.0207746Z npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+2025-12-12T16:50:31.0208139Z npm warn EBADENGINE }
+2025-12-12T16:50:31.0213823Z npm warn EBADENGINE Unsupported engine {
+2025-12-12T16:50:31.0214437Z npm warn EBADENGINE   package: 'qified@0.5.3',
+2025-12-12T16:50:31.0215084Z npm warn EBADENGINE   required: { node: '>=20' },
+2025-12-12T16:50:31.0215533Z npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+2025-12-12T16:50:31.0215886Z npm warn EBADENGINE }
+2025-12-12T16:50:32.4066862Z npm warn deprecated lodash.pick@4.4.0: This package is deprecated. Use destructuring assignment syntax instead.
+2025-12-12T16:50:32.4069548Z npm warn deprecated lodash.omit@4.5.0: This package is deprecated. Use destructuring assignment syntax instead.
+2025-12-12T16:50:40.7986001Z 
+2025-12-12T16:50:40.7986966Z added 253 packages, and audited 254 packages in 10s
+2025-12-12T16:50:40.7996836Z 
+2025-12-12T16:50:40.7997193Z 62 packages are looking for funding
+2025-12-12T16:50:40.7997722Z   run `npm fund` for details
+2025-12-12T16:50:40.8091212Z 
+2025-12-12T16:50:40.8091650Z 2 high severity vulnerabilities
+2025-12-12T16:50:40.8092006Z 
+2025-12-12T16:50:40.8092417Z To address all issues (including breaking changes), run:
+2025-12-12T16:50:40.8093053Z   npm audit fix --force
+2025-12-12T16:50:40.8093322Z 
+2025-12-12T16:50:40.8093549Z Run `npm audit` for details.

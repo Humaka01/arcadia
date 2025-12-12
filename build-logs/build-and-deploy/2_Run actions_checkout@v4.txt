@@ -1,0 +1,72 @@
+﻿2025-12-12T16:50:25.3558590Z ##[group]Run actions/checkout@v4
+2025-12-12T16:50:25.3559958Z with:
+2025-12-12T16:50:25.3560835Z   repository: Humaka01/arcadia
+2025-12-12T16:50:25.3562121Z   token: ***
+2025-12-12T16:50:25.3562883Z   ssh-strict: true
+2025-12-12T16:50:25.3563696Z   ssh-user: git
+2025-12-12T16:50:25.3564505Z   persist-credentials: true
+2025-12-12T16:50:25.3565417Z   clean: true
+2025-12-12T16:50:25.3566411Z   sparse-checkout-cone-mode: true
+2025-12-12T16:50:25.3567395Z   fetch-depth: 1
+2025-12-12T16:50:25.3568178Z   fetch-tags: false
+2025-12-12T16:50:25.3568969Z   show-progress: true
+2025-12-12T16:50:25.3569779Z   lfs: false
+2025-12-12T16:50:25.3570526Z   submodules: false
+2025-12-12T16:50:25.3571373Z   set-safe-directory: true
+2025-12-12T16:50:25.3572498Z ##[endgroup]
+2025-12-12T16:50:25.4697775Z Syncing repository: Humaka01/arcadia
+2025-12-12T16:50:25.4701928Z ##[group]Getting Git version info
+2025-12-12T16:50:25.4703893Z Working directory is '/home/runner/work/arcadia/arcadia'
+2025-12-12T16:50:25.4705800Z [command]/usr/bin/git version
+2025-12-12T16:50:25.4776815Z git version 2.52.0
+2025-12-12T16:50:25.4804612Z ##[endgroup]
+2025-12-12T16:50:25.4821492Z Temporarily overriding HOME='/home/runner/work/_temp/2852443f-8a55-4537-8169-b821661b34a0' before making global git config changes
+2025-12-12T16:50:25.4826472Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-12T16:50:25.4835421Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/arcadia/arcadia
+2025-12-12T16:50:25.4878835Z Deleting the contents of '/home/runner/work/arcadia/arcadia'
+2025-12-12T16:50:25.4882670Z ##[group]Initializing the repository
+2025-12-12T16:50:25.4887653Z [command]/usr/bin/git init /home/runner/work/arcadia/arcadia
+2025-12-12T16:50:25.5015345Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-12-12T16:50:25.5017543Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2025-12-12T16:50:25.5019415Z hint: to use in all of your new repositories, which will suppress this warning,
+2025-12-12T16:50:25.5020864Z hint: call:
+2025-12-12T16:50:25.5021572Z hint:
+2025-12-12T16:50:25.5022475Z hint: 	git config --global init.defaultBranch <name>
+2025-12-12T16:50:25.5023620Z hint:
+2025-12-12T16:50:25.5024686Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-12-12T16:50:25.5026694Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-12-12T16:50:25.5028127Z hint:
+2025-12-12T16:50:25.5028861Z hint: 	git branch -m <name>
+2025-12-12T16:50:25.5029719Z hint:
+2025-12-12T16:50:25.5030886Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-12-12T16:50:25.5043994Z Initialized empty Git repository in /home/runner/work/arcadia/arcadia/.git/
+2025-12-12T16:50:25.5054666Z [command]/usr/bin/git remote add origin https://github.com/Humaka01/arcadia
+2025-12-12T16:50:25.5089271Z ##[endgroup]
+2025-12-12T16:50:25.5090695Z ##[group]Disabling automatic garbage collection
+2025-12-12T16:50:25.5092514Z [command]/usr/bin/git config --local gc.auto 0
+2025-12-12T16:50:25.5122718Z ##[endgroup]
+2025-12-12T16:50:25.5124120Z ##[group]Setting up auth
+2025-12-12T16:50:25.5128590Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-12T16:50:25.5158563Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-12T16:50:25.5579950Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-12T16:50:25.5610805Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-12T16:50:25.5833480Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-12T16:50:25.5865301Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-12T16:50:25.6106493Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-12-12T16:50:25.6145590Z ##[endgroup]
+2025-12-12T16:50:25.6147215Z ##[group]Fetching the repository
+2025-12-12T16:50:25.6156412Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c66ab87402f4652d3b476dddcd168f36aebebef0:refs/remotes/origin/main
+2025-12-12T16:50:26.0066011Z From https://github.com/Humaka01/arcadia
+2025-12-12T16:50:26.0067990Z  * [new ref]         c66ab87402f4652d3b476dddcd168f36aebebef0 -> origin/main
+2025-12-12T16:50:26.0101139Z ##[endgroup]
+2025-12-12T16:50:26.0103539Z ##[group]Determining the checkout info
+2025-12-12T16:50:26.0106451Z ##[endgroup]
+2025-12-12T16:50:26.0111196Z [command]/usr/bin/git sparse-checkout disable
+2025-12-12T16:50:26.0157459Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-12-12T16:50:26.0188272Z ##[group]Checking out the ref
+2025-12-12T16:50:26.0192102Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-12-12T16:50:26.0278169Z Switched to a new branch 'main'
+2025-12-12T16:50:26.0279922Z branch 'main' set up to track 'origin/main'.
+2025-12-12T16:50:26.0288407Z ##[endgroup]
+2025-12-12T16:50:26.0325243Z [command]/usr/bin/git log -1 --format=%H
+2025-12-12T16:50:26.0348571Z c66ab87402f4652d3b476dddcd168f36aebebef0
