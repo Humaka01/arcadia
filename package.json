@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-tailwind-sass-tutor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && npm run stylelint",
+    "stylelint": "stylelint \"**/*.{css,scss}\" --fix"
+  },
+  "dependencies": {
+    "@react-three/drei": "^7.27.5",
+    "@react-three/fiber": "^8.18.0",
+    "next": "16.0.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.22",
+    "postcss": "8.5.6",
+    "sass": "1.96.0",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^39.0.1",
+    "tailwindcss": "3.4.19"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  }
+}
